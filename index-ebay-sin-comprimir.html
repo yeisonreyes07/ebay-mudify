@@ -147,6 +147,7 @@
         min-width: 100px;
         margin-bottom: -15px;
         border: solid 1px #888;
+        justify-content: center;
     }
     #container input:hover + label {
         background: #f2f2f2; /* Fondo de las pestañas al pasar el cursor por encima */
@@ -328,8 +329,20 @@
         text-align: center;
     }
     .features-contents img {
-         width: 150px !important;
+         width: 150px !important ;
         }
+        img.lowest-price-img {
+  width: 56px !important;
+}
+
+.features-contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
      /* FOOTER */
     .footer {
         background-image: url("https://cdn.shopify.com/s/files/1/0559/6944/8111/files/banner-footer-07.png?v=1648000127");
@@ -340,7 +353,7 @@
         grid-row: 6;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-        height: 488px;
+        height: 573px;
         background-color: #2d2d31;
     }
     .logo-footer {
@@ -350,7 +363,7 @@
         justify-content: center;
         grid-column: 2;
         grid-row: 1;
-        width: 100%;
+        width: 70%;
     }
     h1.title-footer {
         color: #fff;
@@ -401,6 +414,15 @@
     .fondo-gris {
         background: #2d2d31;
     }
+    .iconos-footer {
+  max-width: 20px;
+}
+.a_footer {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
     @media screen and (max-width: 900px) {
         /* Ventajas */
         .tabs-ventajas {
@@ -582,12 +604,15 @@
             z-index: 1;
         }
         ul.menu-inline {
-            flex-direction: row;
-            font-size: 16px;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-        }
+    flex-direction: row;
+    font-size: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    display: flex;
+    margin: 0 0;
+    padding: 0;
+}
         .socket {
             margin-top: 0;
         }
@@ -676,27 +701,26 @@
     </div>
 </div>
 <div class="features">
-    <div class="features-contents">
+    <!--<div class="features-contents">
         <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/Free_shipping.png?v=1647636737" alt="" class="src" />
         <h3 class="featued-title">FREE SHIPPING ON ORDER 49$</h3>
-    </div>
+    </div>-->
     <div class="features-contents">
         <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/Returns.png?v=1647636737" alt="" class="src" />
         <h3 class="featued-title">EASY RETURNS</h3>
     </div>
     <div class="features-contents">
         <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/1-06_170x_9fe46e05-3757-42b4-bb69-39f82723e572.png?v=1647636438" alt="" class="src" />
-        <h3 class="featued-title">#1 SELLER IN USA</h3>
+        <h3 class="featued-title">MANUFACTURER WARRANTY</h3>
     </div>
     <div class="features-contents">
-        <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/Price_guarrante.png?v=1647636737" alt="" class="src" />
+        <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/Price-match.png?v=1648131924" width="100px" alt="" class="lowest-price-img" />
         <h3 class="featued-title">LOWEST PRICE</h3>
     </div>
     <div class="features-contents">
         <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/Warranty_Buy.png?v=1647636737" alt="" class="src" />
         <h3 class="featued-title">
-            AUTHORIZED<br />
-            DISTRIBUTOR
+            AUTHORIZED DISTRIBUTOR
         </h3>
     </div>
 </div>
@@ -737,7 +761,7 @@
 <div class="fondo-gris">
     <div class="footer">
         <div class="logo-footer">
-            <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/products/logo-footer_1024x1024@2x.png?v=1632774833" alt="" class="logo-footer footer-img" />
+            <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/logotype-mudify-4wd.png?v=1620745063" alt="" class="logo-footer footer-img" />
             <h1 class="title-footer">BY ENTHUSIASTS FOR ENTHUSIASTS</h1>
         </div>
     </div>
@@ -745,16 +769,16 @@
         <ul class="menu-inline">
             <li>
                 <a class="a_footer" target="_blank" href="https://www.ebay.com/str/mudifycom">
-                <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/products/icono-footer-1_1024x1024@2x.png?v=1633301270" alt="" class="iconos-footer" /> STORE HOME</a>
+                <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/PICTOGRAMAS_-_home.png?v=1648139142" alt="" class="iconos-footer" /> STORE HOME</a>
             </li>
             <li>
-                <a class="a_footer" target="_blank" href="https://mudify.com/pages/contact-us">
-                    <img src="https://contact.ebay.com/ws/eBayISAPI.dll?ShowSellerFAQ&iid=125190550676&requested=mudify-com&redirect=0&frm=284&rt=nc&ssPageName=PageSellerM2MFAQ_VI&_trksid=p2047675.m3561.l1499" alt="" class="iconos-footer" /> CONTACT US
+                <a class="a_footer" target="_blank" href="https://contact.ebay.com/ws/eBayISAPI.dll?ShowSellerFAQ&iid=125190550676&requested=mudify-com&redirect=0&frm=284&rt=nc&ssPageName=PageSellerM2MFAQ_VI&_trksid=p2047675.m3561.l1499">
+                    <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/PICTOGRAMAS_-_correo.png?v=1648139142" alt="" class="iconos-footer" /> CONTACT US
                 </a>
             </li>
             <li>
                 <a class="a_footer" target="_blank" href="https://mudify.com/products">
-                    <img src="https://www.ebay.com/sch/i.html?_dmd=2&iconV2Request=true&_ssn=mudify-com&store_cat=0&store_name=mudifycom&_oac=1" alt="" class="iconos-footer" /> VIEW ALL ITEMS
+                    <img src="https://cdn.shopify.com/s/files/1/0559/6944/8111/files/PICTOGRAMAS_-_items.png?v=1648139142" alt="" class="iconos-footer" /> VIEW ALL ITEMS
                 </a>
             </li>
         </ul>
